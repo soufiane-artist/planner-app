@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المخطط اليومي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background Shapes -->
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    
+    <div class="container">
+        <header>
+            <h1>مخطط المهام اليومية</h1>
+            <div class="task-input">
+                <div class="input-group">
+                    <input type="text" placeholder="أضف مهمة جديدة..." class="task-text">
+                    <input  type="time" class="task-time">
+                </div>
+                <button class="add-btn">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </header>
+        
+        <div class="task-filters">
+            <button class="active" data-filter="all">جميع المهام</button>
+            <button data-filter="pending">قيد التنفيذ</button>
+            <button data-filter="completed">مكتملة</button>
+        </div>
+
+        <ul class="task-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+
+        <div class="task-stats">
+            <span class="pending-tasks">لديك 0 مهام معلقة</span>
+            <button class="clear-btn">مسح المكتمل</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
